@@ -18,7 +18,7 @@ const App = () => {
   }
 
   const postFormAsync = formData => {
-    axios.post(`https://localhost:44317/image/Invert`, formData, {
+    axios.post(`https://localhost:44317/image/Process`, formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }

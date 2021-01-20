@@ -23,7 +23,6 @@ const ImageForm = (props) => {
 
     const onOptionChange = (e) => {
         setOperationType(e.target.value);
-        alert(e.target.value);
     };
 
     return <div className={classes.FormContainer}>
@@ -44,8 +43,8 @@ const ImageForm = (props) => {
                 <label for="grayscale">Odcienie szarości</label>
             </div>
             <div>
-                <input type="radio" checked={operationType === "other"} value="other" name="opChoice" onChange={onOptionChange}/>
-                <label for="other">Inne</label>
+                <input type="radio" checked={operationType === "edge"} value="edge" name="opChoice" onChange={onOptionChange}/>
+                <label for="edge">Wykrywanie krawędzi (Sobel)</label>
             </div>
             <input className={classes.Submit} type="submit" value="Wyślij" />
         </form>
