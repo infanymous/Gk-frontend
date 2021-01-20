@@ -1,0 +1,19 @@
+.FormContainer {
+    width: 50%;
+    margin-top: 150px;
+    align-self: center;
+}
+.Form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.OptionsLabel {
+    margin-top: 20px;
+}
+
+.Submit {
+    margin-top: 20px;
+}
