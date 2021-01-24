@@ -10,7 +10,7 @@ import ImageCollection from './components/ImageCollection/ImageCollection';
 const App = () => {
   const [image, SetImage] = useState();
   const [processedImage, SetProcessedImage] = useState();
-
+  const [loading, SetLoading] = useState(false);
 
   const OnFormSubmit = (img, formData) => {
     SetImage(URL.createObjectURL(img));
@@ -18,6 +18,7 @@ const App = () => {
   }
 
   const postFormAsync = formData => {
+    SetLoading(true);
     axios.post(`https://gk-backend.azurewebsites.net/image/Process`, formData, {
       headers: {
         'Access-Control-Allow-Origin' : '*',
@@ -28,11 +29,14 @@ const App = () => {
       .then(res => {
         SetProcessedImage(res.data);
       })
+      .finally( () => {
+        SetLoading(false); // stop spinner (in response/error)
+   })
   };
 
   const photosCollection =
-    image != null && processedImage != null ?
-      <ImageCollection originalImage={image} processedImage={processedImage} />
+    image != null ?
+      <ImageCollection originalImage={image} processedImage={processedImage} loading={loading}/>
       : null;
 
   return (
