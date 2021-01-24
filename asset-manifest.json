@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Gk-frontend/static/css/main.83da6c15.chunk.css",
-    "main.js": "/Gk-frontend/static/js/main.b9eb1d5e.chunk.js",
-    "main.js.map": "/Gk-frontend/static/js/main.b9eb1d5e.chunk.js.map",
+    "main.css": "/Gk-frontend/static/css/main.e49d5310.chunk.css",
+    "main.js": "/Gk-frontend/static/js/main.33dfec02.chunk.js",
+    "main.js.map": "/Gk-frontend/static/js/main.33dfec02.chunk.js.map",
     "runtime-main.js": "/Gk-frontend/static/js/runtime-main.7863e24b.js",
     "runtime-main.js.map": "/Gk-frontend/static/js/runtime-main.7863e24b.js.map",
     "static/js/2.7dbc16f1.chunk.js": "/Gk-frontend/static/js/2.7dbc16f1.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.a3694050.chunk.js": "/Gk-frontend/static/js/3.a3694050.chunk.js",
     "static/js/3.a3694050.chunk.js.map": "/Gk-frontend/static/js/3.a3694050.chunk.js.map",
     "index.html": "/Gk-frontend/index.html",
-    "static/css/main.83da6c15.chunk.css.map": "/Gk-frontend/static/css/main.83da6c15.chunk.css.map",
+    "static/css/main.e49d5310.chunk.css.map": "/Gk-frontend/static/css/main.e49d5310.chunk.css.map",
     "static/js/2.7dbc16f1.chunk.js.LICENSE.txt": "/Gk-frontend/static/js/2.7dbc16f1.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/Gk-frontend/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7863e24b.js",
     "static/js/2.7dbc16f1.chunk.js",
-    "static/css/main.83da6c15.chunk.css",
-    "static/js/main.b9eb1d5e.chunk.js"
+    "static/css/main.e49d5310.chunk.css",
+    "static/js/main.33dfec02.chunk.js"
   ]
 }
