@@ -18,8 +18,10 @@ const App = () => {
   }
 
   const postFormAsync = formData => {
-    axios.post(`https://localhost:44317/image/Process`, formData, {
+    axios.post(`https://gk-backend.azurewebsites.net/image/Process`, formData, {
       headers: {
+        'Access-Control-Allow-Origin' : '*',
+        'Access-Control-Allow-Methods' : 'GET,PUT,POST',
         'Content-Type': 'multipart/form-data'
       }
     })
